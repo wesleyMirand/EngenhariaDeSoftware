@@ -1,0 +1,485 @@
+FACULDADES INTEGRADAS CAMPOS SALLES
+Wesley Dos Santos Miranda
+RA: 03210923795 ;
+Disciplina - Engenharia de Software
+Luciene do Carmo Rodrigues de Andrade
+________________________________________
+( Nome do Professor(a) )
+1Biblioteca
+São Paulo - SP
+23/05/2022
+2Documentação de Requisitos, Análise e Projeto de Sistemas
+SUMÁRIO
+1 Introdução..........................................................………pag.4
+1.2Descrição do Case............................................………pag.4
+1.3 Glossário ............................................................……pag.5
+2 Visão geral do sistema....................................................pag.6
+2.1 Objetivo ............................................………………..pag.6
+2.2 módulos e funcionalidades..........................................pag.6
+3 Requisitos ......................................................…………pag.7
+3.1 Requisitos funcionais………………………………..pag.7
+3.2 Requisitos não funcionais……………………………pag.7
+3.3 Regras de negócios ………………………………….pag.8
+4 Usuários………………………………………………..pag.9
+5 Casos de uso…………………………………………...pag.10
+5.1 Lista de casos de uso………………………………...pag.11
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.12
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.13
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.14
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.15
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.16
+5.2 Casos de uso textuais e protótipos de baixo nível…..pag.17
+6 Solução………………………………………………..pag.18
+7 Projeto do sistema…………………………………….pag.19
+7.1 Diagrama do cliente com relação ao projeto...……...pag.19
+7.2 Diagrama para colher requisitos do cliente…………pag.19
+7.3 Projeto de interface Resultado esperado……………pag.20
+31. Introdução
+1.1 Descrição do Case
+A Biblioteca Comunitária da Organização Social (ONG) Amigos da Educação,
+recebeu doação de mais de mil livros e sentiu a necessidade de organizar o acervo de
+livros já existente e esses novos livros, pois ficarão com mais de dois mil e seiscentos
+livros disponíveis para o empréstimo. Com o aumento de solicitações de empréstimo e
+uma equipe pequena, tem apenas duas pessoas responsáveis pela biblioteca ficou muito
+difícil o controle manual e a equipe solicitou para os alunos do curso de Analise e
+Desenvolvimento de Sistemas o desenvolvimento de um Software para a Gestão da
+Biblioteca.
+Esse software precisa ser um sistema online pois seria interessante que as
+pessoas que solicitem os livros possam fazer via celular ou no computador conectados a
+internet. É preciso desenvolver um sistema de gerenciamento de entradas e saídas de
+acervos (livros) bem como a emissão de relatórios gerenciais e de controles, com a
+finalidade de facilitar a administração da biblioteca da ONG, tornando-a mais eficaz,
+trazendo benefícios para a equipe e para as pessoas que solicitam os livros. O sistema
+será implementado buscando atender todas as necessidades da biblioteca, inclusive
+possibilitando eventuais atualizações, ou seja, fornecer compatibilidade para inclusão de
+novas funções, emissão de novos relatórios.
+41.2 Glossário
+TermoDefinição
+Nome da
+plataformaBiblioteca Comunitária
+MódulosDefinição das partes do sistema
+RequisitosRequisitos funcionais e não funcionais do sistema
+Usuários do
+sistemaDoadores e Leitores
+52. Visão Geral do Sistema
+2.1 Objetivo
+O objetivo principal é organizar a biblioteca, para os aluno terem acesso ao
+estoque de livros, solicitar empréstimo e fazer doação. E ajudar a administração com
+soluções para problemas do dia a dia .
+2.2 Módulos e Funcionalidades
+MD.1(Usuário) Os Usuário terão a interface com as seguintes funções.
+Cadastro como usuário (cliente) , onde ele ira preencher todos os requisitos necessários e
+acessar a plataforma da biblioteca para solicitar empréstimo ou doar livros.
+MD.2(Sócios)- Os Sócios terão uma interface com as seguintes funções.
+Cadastro como Sócio, onde ele ira preencher todos os requisitos necessários para
+ter acesso a manutenção do sistema. Assim podendo postar conteúdo referente a
+biblioteca e ter controle de quem doa ou solicita empréstimo.
+63. Requisitos
+3.1 Requisitos Funcionais
+AtorMódulos/Funcionalidades
+UsuárioMD.1/ Acessa a plataforma e tem a sua disposição diversos
+serviços, como: fazer solicitação de livros disponíveis para
+empréstimos e doar na recepção.
+SócioMD.2/ Atualiza toda entrada e saída do estoque, dão baixa em
+toda solicitação feita pelo usuário.
+3.2 Requisitos Não Funcionais
+Código
+RNF01
+Descrição
+(Detalhe) Plataforma WEB desenvolvida com as seguintes linguagens: Front
+end & Backend: HTML, CSS, Java script. FrameWork: View.
+Compatível com sistemas: Microsoft Windows XP ao Windows 11, Linux,
+Android e IOS.
+RNF02(Condição Limite) Ao registrar os interesses do usuário a
+plataforma deve retornar a resposta em 2 segundos.
+RNF03Detalhes usar navegador web para entrada de dados, em WEB
+SITE com cliente server, armazenando dados em um servidor
+na web, através de dispositivo desktop(PC) e smartfone
+conectados via internet e no-break.
+RNF04(Condição limite) deve registrar empréstimos autorizados via
+sistema online 24hrs, mesmo com falhas de energia ou de
+dispositivos (desktop, smartfone). Ou de links de internet.
+73.3 Regras de Negócio
+A tabela a seguir apresenta as regras de negócio do sistema. Cada regra foi identificada
+com um código sequencial para referências na documentação (RN1, RN2).
+Código
+Descrição
+Requisitos
+Relacionados
+O Usuário faz seu cadastro na plataforma e tem
+RN01
+acesso aos recursos referentes, em agendar a
+Usuário
+doação e solicitar empréstimo por livros disponível.
+O Sócio após fazer seu cadastro vai ter a função de
+RN02
+sempre manter atualizado, toda saída e entrada dos
+livros.
+8
+Sócio4. Usuários
+O sistema (Biblioteconomia) possui 2(Dois) usuários: Os Clientes e os Sócios.
+
+O Usuário faz seu cadastro na plataforma, podendo marca online, o dia da
+sua doação se estiver liberado. E tem acesso a todos os livros disponíveis para
+empréstimos.
+
+O Sócio após fazer seu cadastro ira ter de manter toda entrada e saída
+de livros atualizada. E o sistema sempre com manutenções que tragam facilidades
+pra administração.
+95. Casos de Uso
+5.1 Lista de Casos de Uso
+Código
+Nome
+Descrição
+Ator
+Priorid
+ade
+Sistema solicita ao aluno
+identificação e uma senha de
+acesso.
+UC01
+Cadastrar Aluno
+Aluno digita seu ID e senha e
+senha com teclados
+numéricos, teclado
+alfabético.
+Cliente
+{Alta}
+Validação de ID e senha
+fornecida
+Se ID for valido e senha
+corresponder o sistema
+reconhece o usuário e
+finaliza o sistema.
+UC02
+UC03
+10
+Solicitação de
+produtosAluno solicita empréstimo de
+livro , sistema verifica no
+estoque se tem disponível,
+envia pedido para ser
+analisado e confirma.Cliente{Alta}
+Solicitação de DoaçãoAluno verifica dia disponível
+na plataforma, para agendar
+doação.Cliente{Alta}Sistema solicita ao aluno
+identificação e uma senha de
+acesso.
+Atendente digita seu ID e
+UC04
+Cadastro dos alunos
+na biblioteca
+senha e senha com teclados
+numéricos, teclado
+alfabético.
+Atendente
+Validação de ID e senha
+fornecida
+{Alta}
+Se ID for válido e senha
+corresponder o sistema
+reconhece o usuário e
+finaliza o sistema.
+Repassa solicitação
+dos AlunosA atendente ou sistema
+procura a disponibilidade de
+livros no estoque, confirma o
+serviço, envia solicitação ao
+estoque.Atendente{Alta}
+UC06Repassa saídasO estoquista procura os
+livros no estoque e da baixa
+na quantidade de saídasEstoquista{Alta}
+UC07Pedidos de reposição
+de estoqueEstoquista da baixa nos
+livros e envia ao gerenteEstoquista{Alta}
+Início e fim do serviçoO Sistema da inicio e fim do
+serviço, envia resultado para
+atendenteSistema{Alta}
+UC9Atualização de
+pedidos no estoqueO Gerente recebe o
+balanceamento de estoque,
+atualiza livros doados e
+previsão de chegada ao
+sistemaGerente{Alta}
+UC10Visualiza andamentoO gerente recebe todas as
+informações de todo sistemaGerente{Alta}
+UC05
+UC08
+115.2 Casos de Uso Textuais e Protótipos de Interface de Baixo Nível
+As tabelas a seguir apresentam os casos de uso detalhados do sistema. Além disso, são
+apresentados os protótipos de interface de baixo nível.
+12Código
+Nome
+Ator
+UC01
+Cadastrar Aluno
+Administrador\Usuario
+Sistema solicita ao aluno identificação e uma senha de acesso.
+Ator digita seu ID e senha e senha com teclados numéricos,
+teclado alfabético.
+Descrição
+Validação de ID e senha fornecida
+Se ID for valido e senha corresponder o sistema reconhece o
+usuário e finaliza o sistema.
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Fluxo Alternativo
+Regras de Negócio
+Requisitos
+13
+Ator autenticado
+Usuário reconhecido e liberado para acessar o sistema.
+1. aluno
+2. sistema
+3.retorno do sistema
+1.aluno
+2.sistema
+3.retorno de erro de cadastro
+RN01, RN02
+RNF01, RNF02,RNF03
+Protótipo de Baixo NívelCódigo
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Fluxo Alternativo
+Regras de Negócio
+Requisitos
+Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+UC02
+Solicitação de Livros
+Usuário\Administrador
+Ator solicita o serviço pós escolha no estoque, verifica se a
+solicitação está disponível, envia pedido para ser analisado e
+confirmado.
+Ter cadastro no sistema
+Irá poder usar o serviços da biblioteca
+1-aluno
+2-sistema
+3-retorno do sistema
+1-aluno
+2-sistema
+3-cancela ação
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04
+UC03
+Solicitação de revisão
+Aluno\Atendente
+Ator entra em sua conta, escolhe um dia e horário que tenha
+vaga, envia solicitação de confirmação para atendente
+Aluno precisa efetuar o cadastro ou acessar uma conta valida,
+marcar um dia e horário disponível, enviar solicitação para
+atendente e confirmar
+Empréstimos e doações online, recebe notificação de fim de
+serviço
+1- aluno
+2-sistema
+3- atendente
+4--sistema
+5-aluno
+Regras de NegócioRN01, RN02
+RequisitosRNF01, RNF02, RNF03, RNF04
+14Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+15
+UC04
+Pesquisa de Livros Disponíveis
+cliente\atendente
+Ator procura a disponibilidade dos livros no estoque, envia
+pedido ao estoque
+Cliente precisa efetuar o cadastro ou acessar uma conta valida,
+pesquisa os livros no catalogo válido, marcar um dia e horário
+disponível, envia solicitação para atendente confirmar
+Recebe notificação de fim de serviços, retirada do livro
+1-aluno
+2-sistema
+3-aluno
+4-sitema
+5-atendente
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04
+UC05
+Repassa solicitação dos Alunos
+Atendente\Aluno
+Ator confirma disponibilidade do livro e aceita a solicitação que
+foi encaminhada pelo aluno
+Ter cadastro no sistema e solicitar o pedido
+Atendente empresta ao aluno o livro
+1-atendente
+2-sistema
+3-aluno
+4-sistema
+5-aluno
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+16
+UC06
+Repassa saídas
+Estoquista/Sistema
+Ator procura os livros no estoque e da baixa na quantidade de
+saídas
+Atualiza o sistema
+Usa o serviços do sistema pra dar baixa nos livro que sairam
+1-estoquista
+2-sistema
+3-completa ação
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04
+UC07
+Pedidos de reposição de estoque
+Estoquista\Gerente
+Ator da baixa nos livros e envia ao gerente comprovante
+Dar baixa e enviar ao gerente
+Estoquista após da baixa nos livro, manda comprovante ao
+gerente
+1-estoquista
+2-sistema
+3-gerente
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04
+UC08
+Início e fim do serviço
+Sistema/Atendente
+Ator envia resultado para atendente
+O sistema envia o resultado da solicitação feita pelo atendente
+Após chegar o resultado de inicio o sistema da fim de servico e
+retorna ao menu principal
+1-sistema
+2-atendente
+3-sistema
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+Código
+Nome
+Ator
+Descrição
+Pré-condição
+Pós-Condição
+Fluxo Principal
+Regras de Negócio
+Requisitos
+17
+UC09
+Atualização de pedidos no estoque
+Gerente/Sistema
+Ator recebe o balanceamento de estoque
+Gerente recebe o balanceamento do estoque e atualiza o
+sistema de livros
+Após atualizar os livros doados ele vai por no sistema a previsão
+de chegada
+1-gerente
+2-sistema
+RN01, RN02
+RNF01, RNF02, RNF03, RNF04
+UC10
+Visualiza andamento
+Gerente/Sistema
+Ator recebe Informação
+Gerente solicita informações atualizadas
+Após chegar todas informações, ele visualiza o andamento de
+todo o sistema e da andamento ao menu principal
+1-gerente
+2-sistema
+RN01, RN02
+RNF01, RNF02, RNF03, RNF046. Solução Proposta
+6.1 Solução
+A Biblioteca Digital foi proposta neste trabalho, para suprir as necessidades
+dos alunos, devido a alta demanda de retirada e doação. Foi usada nessa Arquitetura os
+seguintes componentes:
+a)Repositórios Metadados
+b)Servidores Web
+c)Servidores de Mídia
+d)Gerenciador de Biblioteca Digital RFID
+e)Interface comum de acesso Metadados
+d)Interface com Administrador, Usuário e Autor
+187. Projeto do Sistema
+7.1 Diagrama do cliente com relação ao projeto
+1-Como vai entregar o serviço?
+2-Especificar oque cada um da equipe vai fazer e quanto
+custa sua mão de obra mesmo sendo voluntario ?
+3-Quanto ficaria o orçamento, se fosse pagar?
+4-Que tipo de relatório vai ser usado para entrada e
+saída?
+5-Como crianças, idosos e quem mais precisa vai utilizar
+o serviço?
+6-Qual vai ser a técnica de economia de controle?
+7-O tempo de entrega?
+8-Como vai chegar até o publico alvo?
+7.2 Diagrama para colher requisitos do cliente
+1-Qual historia da Biblioteca?
+2-Aonde fica a cede?
+3-Quais ideias e principais requisitos?
+4-Quem trabalha voluntario e quem é o gerente
+responsável de toda a equipe?
+5-Vai ter sistema pra marca horário de retirada e
+entrada?
+6-Tem regulamentação de multa caso não tenha retorno
+do livro?
+7-Vai ter sistema de Cadastro/Login com todas
+informação do usuário?
+8-Tem ferramenta que gostaria de prioriza no projeto?
+197.3 Projeto de Interface Resultado Esperado
+O software é um site web para entrada e saída de livros, por acesso há celulares
+e computador. Com sistema online para cadastro, relatório gerencial, controle com
+atualizações de acordo com novas funções e emissão de relatórios.
+O intuito vai ser facilita a administração da equipe, que cuida da biblioteca da
+ONG, com benefícios para quem solicitar os livros.
